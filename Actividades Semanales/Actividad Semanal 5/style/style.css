@@ -851,6 +851,10 @@ footer {
         flex-basis: 1; /*corroborar */
     }
 
+    .title-article {
+        padding-left: 20px;
+    }
+
     .title-article h1 {
         font-size: 40px;
         justify-content: center;
@@ -872,6 +876,10 @@ footer {
         padding-inline: 34px;
     }
 
+    .article-iconos {
+        padding-left: 20px;
+    }
+
     .video iframe {
         width: 700px;
         height: 300px;
@@ -881,8 +889,319 @@ footer {
         width: 670px;
     }
 
+    .noticias-bot1, .noticias-bot2, .noticias-bot3 {
+        margin-left: -15px;
+    }
+/* ------------------------------ Recomendado ------------------------------ */
+    .recomendado {
+        width: 768px;
+    }
+
+    .recomendado-flex {
+        margin-inline: 0px;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+
+    .recomendado1, .recomendado2, .recomendado3, .recomendado4{
+        width: 320px;
+        margin-left: 30px;
+    }
+
+/* ------------------------------ Newsletter ------------------------------ */
+    .newsletter {
+        padding-left: 50px;
+    }
+
+/* ------------------------------ Temas Interes ------------------------------ */
+    .temas-interes {
+        margin-inline: 10px;
+    }
+
+/* ------------------------------ Hablamos ------------------------------ */
+    .hablamos {
+        flex-direction: column;
+    }
+
+    .hablamos-newsletter {
+        padding-left: 180px;
+    }
+
+/* ------------------------------ Buscar ------------------------------ */
+    .buscar-input-text {
+        width: 700px;
+    }
+
+    /* ------------------------------ Footer ------------------------------ */
+    .section-footer {
+        margin-inline: 50px;
+    }
+
+    .footer-bot {
+        width: 10px;
+    }
+
+    .footer-bot-p1 {
+        width: 768;
+    }
+
+    .footer-bot-ps {
+        gap: 40px;
+        width: 600px;
+    }
 }
 
-@media screen and (max-width: 600px) {
-    
+@media screen and (max-width: 425px) {
+    body {
+        width: 425px;
+    }
+/* ------------------------------ Header ------------------------------ */
+    .header1 {
+        max-width: 425px;
+        margin-inline: 0px;
+        padding-inline: 10px;
+        padding-top: 20px;
+    }
+
+    .header1 p {
+        font-size: 13px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .header2 {
+        max-width: 425px;
+        margin-inline: 0px;
+        padding-inline: 13px;
+        flex-direction: column;
+    }
+
+    .header2 a {
+        font-size: 8px;
+    }
+
+    .header2 img {
+        width: 15px;
+    }
+
+    .header2-div1-ul {
+        gap: 10px;
+        margin-top: 5px;
+    }
+
+    .header2-div2-ul {
+        gap: 5px;
+        margin-top: 0px;
+        padding-left: 140px;
+    }
+
+/* ------------------------------ Content ------------------------------ */
+    .content {
+        margin-inline: 0px;
+        flex-direction: column;
+        padding-inline: 0px;
+    }
+
+    .main-content {
+        margin-inline: 0px;
+        width: 425px;
+        padding-inline: 0px;
+    }
+
+/* ------------------------------ Content Right ------------------------------ */
+    .content-right {
+        visibility: hidden;
+        position: absolute;
+        /* directamente escondi el recomendados para ser mas facil*/
+    }
+
+/* ------------------------------ Content Left------------------------------ */
+    .content-left {
+        margin-top: 50px;
+        width: 768px;
+        flex-basis: 1; /*corroborar */
+        padding-inline: 12px;
+    }
+
+    .content-left p {
+        width: 400px;
+    }
+
+    .title-article {
+        padding-inline: 0px;
+        margin-inline: 0px;
+    }
+
+    .title-article h1 {
+        font-size: 30px;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        width: 400px;
+        line-height: 35px;
+        padding-inline: 0px;
+        margin-inline: 0px;
+    }
+
+    .article-img img {
+        width: 400px;
+        padding-inline: 0px;
+    }
+
+    .article-avatar {
+        padding-left: 20px;
+    }
+
+    .article-info {
+        width: 350px;
+        padding-inline: 0px;
+        flex-direction: column;
+        gap: 15px;
+        padding-inline: 25px; /*no me gusta hacer esto*/
+        /* justify-content: center; */ /*no va*/
+    }
+
+    .article-info2 {
+        padding-inline: 95px;
+    }
+
+    .article-iconos {
+        padding-left: 0px;
+    }
+
+    .video {
+        margin-inline: 0px;
+        padding-inline: 0px;
+        width: 425px;
+    }
+
+    .video iframe {
+        width: 400px;
+        height: 300px;
+        margin-inline: 0px;
+        padding-inline: 0px;
+        margin-left: -22px;
+    }
+
+    .main-img1 img {
+        width: 400px;
+    }
+
+    .noticias-bot1, .noticias-bot2, .noticias-bot3 {
+        margin-left: -15px;
+    }
+
+    .anuncio-main {
+        width: 380px;
+        padding-inline: 10px;
+    }
+
+    .anuncio-main img {
+        width: 150px;
+    }
+
+    .anuncio-main p {
+        width: 200px;
+    }
+
+    .decimo-parrafo {
+        flex-direction: column;
+    }
+
+    .decimo-parrafo-div1 {
+        flex-direction: column;
+        margin-right: 0px;
+    }
+
+    .decimo-parrafo-div1-1 p {
+        width: 150px;
+    }
+
+    .decimo-parrafo-div2 {
+        margin-left: -180px;
+        gap: 30px;
+        padding-top: 10px;
+    }
+/* ------------------------------ Noticias Bot ------------------------------ */
+    .noticias-bot1 {
+        display: flex;
+        flex-direction: column;
+        width: 386px;
+        padding-inline: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .noticias-bot1 p {
+        width: 350px;
+    }
+
+    .noticias-bot2, .noticias-bot3 {
+        padding-left: 15px;
+    }
+
+    .noticias-bot2 img, .noticias-bot3 img {
+        width: 400px;
+        height: 250px;
+    }
+
+/* ------------------------------ Recomendado ------------------------------ */
+    .recomendado {
+        width: 425px;
+    }
+
+    .recomendado-flex {
+        margin-inline: 0px;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+
+    .recomendado1, .recomendado2, .recomendado3, .recomendado4{
+        width: 320px;
+        margin-left: 30px;
+    }
+
+/* ------------------------------ Newsletter ------------------------------ */
+    .newsletter {
+        padding-left: 50px;
+    }
+
+/* ------------------------------ Temas Interes ------------------------------ */
+    .temas-interes {
+        margin-inline: 10px;
+    }
+
+/* ------------------------------ Hablamos ------------------------------ */
+    .hablamos {
+        flex-direction: column;
+    }
+
+    .hablamos-newsletter {
+        padding-left: 180px;
+    }
+
+/* ------------------------------ Buscar ------------------------------ */
+    .buscar-input-text {
+        width: 700px;
+    }
+
+    /* ------------------------------ Footer ------------------------------ */
+    .section-footer {
+        margin-inline: 50px;
+    }
+
+    .footer-bot {
+        width: 10px;
+    }
+
+    .footer-bot-p1 {
+        width: 768;
+    }
+
+    .footer-bot-ps {
+        gap: 40px;
+        width: 600px;
+    }
 }
