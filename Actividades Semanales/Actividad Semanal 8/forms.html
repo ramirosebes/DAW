@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="./style/styleForms.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <section class="section-header">
+        <header class="header1">
+            <div class="header1-menu">
+                <img src="./img/menu-hamburguesa.svg" alt="Menu hambuguesa">
+                <p>Menu</p>
+            </div>
+            <a href="https://www.xataka.com/"><img src="./img/xataka-logo.svg" alt="Logo" class="logo"></a>
+            <div class="header1-nuevo">
+                <p>Nuevo</p>
+                <img src="./img/libro-nuevo.svg" alt="Libro">
+            </div>
+        </header>
+        <div class="header2">
+            <div class="header2-div1">
+                <ul class="header2-div1-ul">
+                    <li><a href="https://www.xataka.com/categoria/analisis" target="_blank"><img src="./img/lupa.svg" alt="Lupa"></a></li>
+                    <li><a href="https://www.xataka.com/categoria/seleccion" target="_blank">Analisis</a></li>
+                    <li><a href="https://www.xataka.com/categoria/moviles" target="_blank">Xataka Seleccion</a></li>
+                    <li><a href="https://www.xataka.com/categoria/medicina-y-salud" target="_blank">Moviles</a></li>
+                    <li><a href="https://www.xataka.com/categoria/medicina-y-salud" target="_blank">Ciencia</a></li>
+                    <li><a href="https://www.xataka.com/consejos/mejores-guias-compra-moviles-informatica-audio-tecnologia-xataka" target="_blank">Guias de compra</a></li>
+                    <li><a href="https://www.xataka.com/categoria/movilidad" target="_blank">Movilidad</a></li>
+                    <li><a href="https://www.xataka.com/categoria/magnet" target="_blank">Magnet</a></li>
+                </ul>
+            </div>
+            <div class="header2-div2">
+                <ul class="header2-div2-ul">
+                    <li><a href="https://www.twitch.tv/xataka" target="_blank"><img src="./img/twitch-icono.svg" alt="Twitch"></a></li>
+                    <li><a href="https://www.tiktok.com/@xataka" target="_blank"><img src="./img/tiktok-icono.svg" alt="Tik Tok"></a></li>
+                    <li><a href="https://telegram.me/xataka" target="_blank"><img src="./img/telegram-icono.svg" alt="Telegram"></a></li>
+                    <li><a href="https://www.instagram.com/xataka/" target="_blank"><img src="./img/instagram-icono.svg" alt="Instagram"></a></li>
+                    <li><a href="https://www.youtube.com/user/xatakatv" target="_blank"><img src="./img/youtube-icono.svg" alt="You Tube"></a></li>
+                    <li><a href="https://twitter.com/xataka" target="_blank"><img src="./img/twitter-icono.svg" alt="Twitter"></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <main>
+        <section class="newsletter">
+            <div class="titulo">
+                <h1>¡Suscribete a nuestro Newsletter!</h1>
+            </div>
+            <form action="" class="formulario" id="formulario">
+
+                <!-- Grupo Nombre -->
+                <div class="formulario__grupo" id="grupo__nombre">
+                    <label for="nombre" class="formulario__label">Nombre</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El nombre debe tener más de 6 letras y al menos un espacio entre medio.</p>
+                </div>
+
+                <!-- Grupo: Edad -->
+                <div class="formulario__grupo" id="grupo__edad">
+                    <label for="edad" class="formulario__label">Edad</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="edad" id="edad" placeholder="Edad">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El número entero mayor o igual a 18.</p>
+                </div>
+
+                <!-- Grupo: Correo Electronico -->
+                <div class="formulario__grupo" id="grupo__correo">
+                    <label for="correo" class="formulario__label">Correo Electrónico</label>
+                    <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                <p class="formulario__input-error">El correo debe tener un formato de email válido.</p>
+                </div>
+
+                <!-- Grupo: Teléfono -->
+                <div class="formulario__grupo" id="grupo__telefono">
+                    <label for="telefono" class="formulario__label">Teléfono</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="Telefono">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El telefono debe tener al menos 7 dígitos, no se aceptan espacios, guiones ni paréntesis.</p>
+                </div>
+
+                <!-- Grupo: Contraseña -->
+                <div class="formulario__grupo" id="grupo__password">
+                    <label for="password" class="formulario__label">Contraseña</label>
+                    <div class="formulario__grupo-input">
+                        <input type="password" class="formulario__input" name="password" id="password" placeholder="Contraseña">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">La contraseña debe tener al menos 8 caracteres, formados por letras y números.</p>
+                </div>
+
+                <!-- Grupo: Contraseña 2 -->
+                <div class="formulario__grupo" id="grupo__password2">
+                    <label for="password2" class="formulario__label">Repetir Contraseña</label>
+                    <div class="formulario__grupo-input">
+                        <input type="password" class="formulario__input" name="password2" id="password2" placeholder="Repetir contraseña">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+                </div>
+
+                <!-- Grupo: Direccion -->
+                <div class="formulario__grupo" id="grupo__direccion">
+                    <label for="direccion" class="formulario__label">Direccion</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="direccion" id="direccion" placeholder="Direccion">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">La direccion debe tener menos 5 caracteres, con letras, números y un espacio en el medio.</p>
+                </div>
+
+                <!-- Grupo: Ciudad -->
+                <div class="formulario__grupo" id="grupo__ciudad">
+                    <label for="ciudad" class="formulario__label">Ciudad</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="ciudad" id="ciudad" placeholder="Ciudad">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">La ciudad debe tener al menos 3 caracteres.</p>
+                </div>
+
+                <!-- Grupo: Codigo Postal -->
+                <div class="formulario__grupo" id="grupo__codigoPostal">
+                    <label for="codigoPostal" class="formulario__label">Codigo Postal</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="codigoPostal" id="codigoPostal" placeholder="Codigo Postal">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El coidgo postal debe tener al menos 3 caracteres.</p>
+                </div>
+                
+                <!-- Grupo: DNI -->
+                <div class="formulario__grupo" id="grupo__dni">
+                    <label for="dni" class="formulario__label">DNI</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="dni" id="dni" placeholder="DNI">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El DNI debe ser entre 7 u 8 digitos.</p>
+                </div>
+
+                <!-- Grupo: Terminos y Condiciones -->
+                <div class="formulario__grupo" id="grupo__terminos">
+                    <label class="formulario__label">
+                        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                        Acepto los Terminos y Condiciones
+                    </label>
+                </div>
+
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                </div>
+    
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button type="submit" class="formulario__btn">Enviar</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section class="section-footer">
+            <p class="footer-title"><a href="https://es.webedia-group.com/" target="_blank" rel="noopener noreferrer">webedia/.</a></p>
+            <div class="footer-ul">
+                <ul>
+                    <li>Tecnología</li>
+                    <li><a href="https://www.xataka.com/?utm_source=xataka&utm_medium=network&utm_campaign=footer" target="_blank" rel="noopener noreferrer">Xataka</a></li>
+                <li><a href="https://www.xatakamovil.com/?utm_source=xataka&utm_medium=network&utm_campaign=footer" target="_blank" rel="noopener noreferrer">Xataka Movil</a></li>
+                    <li><a href="https://www.xatakandroid.com/?utm_source=xataka&utm_medium=network&utm_campaign=footer" target="_blank" rel="noopener noreferrer">Xataka Android</a></li>
+                    <li><a href="https://www.xatakahome.com/?utm_source=xataka&utm_medium=network&utm_campaign=footer" target="_blank" rel="noopener noreferrer">Xataka Smart Home</a></li>
+                    <li><a href="https://www.applesfera.com/?utm_source=xataka&utm_medium=network&utm_campaign=footer" target="_blank" rel="noopener noreferrer">Applesfera</a></li>
+                    <li><a href="https://www.genbeta.com/?utm_source=xataka&utm_medium=network&utm_campaign=footer" target="_blank" rel="noopener noreferrer">Genbeta</a></li>
+                    <li><a href="https://www.xataka.com/categoria/magnet" target="_blank" rel="noopener noreferrer">Magnet</a></li>
+                    <li><a href="https://www.mundoxiaomi.com/?utm_source=xataka&utm_medium=network&utm_campaign=footer" target="_blank" rel="noopener noreferrer">Mundo Xiaomi</a></li>
+                </ul>
+                <ul>
+                    <li>Videojuegos</li>
+                    <li><a href="https://www.3djuegos.com/#utm_source=xataka&utm_medium=network&utm_campaign=footer" target="_blank" rel="noopener noreferrer">3DJuegos</a></li>
+                    <li><a href="https://www.vidaextra.com/?utm_source=xataka&utm_medium=network&utm_campaign=footerr" target="_blank" rel="noopener noreferrer">Vida Extra</a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Millenium</a></li>
+                    <li><a href="https://www.3djuegospc.com/#utm_source=xataka&utm_medium=network&utm_campaign=footer" target="_blank" rel="noopener noreferrer">Millenium</a></li>
+                    <li><a href="https://www.3djuegospc.com/#utm_source=xataka&utm_medium=network&utm_campaign=footer" target="_blank" rel="noopener noreferrer">3DJuegos PC</a></li>
+                    <li><a href="https://www.3djuegosguias.com/#utm_source=xataka&utm_medium=network&utm_campaign=footer" target="_blank" rel="noopener noreferrer">3DJuegos Guias</a></li>
+                </ul>
+                <ul>
+                    <li>Entretenimiento</li>
+                    <li><a href="https://www.sensacine.com/#utm_source=xataka&utm_medium=network&utm_campaign=footer" target="_blank" rel="noopener noreferrer">Sansacine</a></li>
+                    <li><a href="https://www.espinof.com/?utm_source=xataka&utm_medium=network&utm_campaign=footer" target="_blank" rel="noopener noreferrer">Espinof</a></li>
+                </ul>
+                <ul>
+                    <li>Gastronomia</li>
+                    <li><a href="https://www.directoalpaladar.com/?utm_source=xataka&utm_medium=network&utm_campaign=footer" target="_blank" rel="noopener noreferrer">Directo al Paladar</a></li>
+                </ul>
+                <ul>
+                    <li>Estilo de vida</li>
+                    <li><a href="https://www.vitonica.com/?utm_source=xataka&utm_medium=network&utm_campaign=footer" target="_blank" rel="noopener noreferrer">Vitonica</a></li>
+                    <li><a href="https://www.trendencias.com/?utm_source=xataka&utm_medium=network&utm_campaign=footer" target="_blank" rel="noopener noreferrer">Trendencias</a></li>
+                    <li><a href="https://www.trendenciashombre.com/?utm_source=xataka&utm_medium=network&utm_campaign=footer" target="_blank" rel="noopener noreferrer">Trendencias Hombre</a></li>
+                    <li><a href="https://decoracion.trendencias.com/?utm_source=xataka&utm_medium=network&utm_campaign=footer" target="_blank" rel="noopener noreferrer">Decoesfera</a></li>
+                    <li><a href="https://www.compradiccion.com/?utm_source=xataka&utm_medium=network&utm_campaign=footer" target="_blank" rel="noopener noreferrer">Compradiccion</a></li>
+                    <li><a href="https://www.poprosa.com/?utm_source=xataka&utm_medium=network&utm_campaign=footer" target="_blank" rel="noopener noreferrer">Poprosa</a></li>
+                </ul>
+        </div>
+        <div class="footer-bot">
+            <p class="footer-bot-p1">LATINOAMERICA</p>
+            <div class="footer-bot-ps">
+                <p><a href="https://www.xataka.com.mx/?utm_source=xataka&utm_medium=network&utm_campaign=footer" target="_blank" rel="noopener noreferrer">Xataka Mexico</a></p>
+                <p><a href="https://www.3djuegos.lat/#utm_source=xataka&utm_medium=network&utm_campaign=footer" target="_blank" rel="noopener noreferrer">3DJuegos LATAM</a></p>
+                <P><a href="https://www.sensacine.com.mx/#utm_source=xataka&utm_medium=network&utm_campaign=footer" target="_blank" rel="noopener noreferrer">Sensacine Meximo</a></P>
+                <p><a href="https://www.directoalpaladar.com.mx/?utm_source=xataka&utm_medium=network&utm_campaign=footer" target="_blank" rel="noopener noreferrer">Directo al Paladar Mexico</a></p>
+            </div>
+        </div>
+        </section>
+    </footer>
+    
+    <script src="/mainForm.js"></script>
+</body>
+</html>
